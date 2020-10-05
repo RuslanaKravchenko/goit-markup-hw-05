@@ -104,11 +104,34 @@
 }
 
 .work-list__item {
+  position: relative;
+
   flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
 .work-list__item:not(:last-child) {
   margin-right: 30px;
+}
+
+.work-list__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+
+  font-weight: 700;
+  line-height: 1.14;
+  color: var(--primary-white-color);
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 /* Our team */
@@ -182,4 +205,59 @@
 .regular-clients__link:focus {
   --color-icon-client: var(--accent-color);
   border-color: var(--accent-color);
+}
+
+/* Modal window */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 528px;
+  min-height: 581px;
+
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal__button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  background-color: var(--primary-white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.modal__button-close:hover {
+  --color-close-black: var(--accent-color);
 }
