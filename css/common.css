@@ -59,8 +59,6 @@ img {
 }
 
 .container {
-  margin-top: 0;
-  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -247,6 +245,7 @@ img {
 
 .footer__contacts {
   margin-right: 70px;
+  width: 231px;
 }
 
 .logo__footer {
@@ -269,6 +268,10 @@ img {
 }
 .address__item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.ocial-networks {
+  width: 206px;
 }
 
 .social-networks__title {
