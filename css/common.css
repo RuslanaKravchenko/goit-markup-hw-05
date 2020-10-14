@@ -244,8 +244,8 @@ img {
 }
 
 .footer__contacts {
-  margin-right: 70px;
-  width: 231px;
+  margin-right: 30px;
+  width: 270px;
 }
 
 .logo__footer {
@@ -270,8 +270,8 @@ img {
   margin-bottom: 9px;
 }
 
-.ocial-networks {
-  width: 206px;
+.social-networks {
+  width: 270px;
 }
 
 .social-networks__title {
@@ -285,6 +285,9 @@ img {
 
 .social-networks__list {
   display: flex;
+}
+
+.social-networks__list--center {
   justify-content: center;
 }
 
